@@ -8,9 +8,10 @@
 
 колір hover - #2196F3
 
-колір пошти та тел підвалу - rgba(255, 255, 255, 0.6);
+колір пошти та тел підвалу - rgba(255, 255, 255, 0.6); */
 
- */
+/*! display: inlin-block; */
+
 :root {
     --primary-text-color: #212121;
     --title-text-color: #757575;
@@ -21,6 +22,31 @@
     --accent-background-color: #2196F3;
     --post-tel-color: rgba(255, 255, 255, 0.6);
     --background-button-color: #F5F4FA;
+    --background-footer: #2F303A;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+button {
+    cursor: pointer;
+}
+address {
+    font-style: normal;
+}
+img {
+    display: block;
 }
 
 body {
@@ -30,7 +56,8 @@ body {
 
     font-family: "Roboto";
 
-    background: #FFFFFF;
+    background: khaki; 
+    /* var(--background-color); */
     color: var(--title-text-color);
 }
 
@@ -47,14 +74,20 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+/* ?--- контейнер --- */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
 
-
-/* Header */
+/* --- Header --- */
 .top {
 
 }
 
-/* логотип */
+/* --- логотип --- */
 
 .logo {
 
@@ -76,8 +109,7 @@ body {
     color: var(--accent-color);
 }
 
-/* навігація */
-/* !--------------------- */
+/* --- навігація --- */
 
 .link {
     text-decoration: none;
@@ -88,7 +120,7 @@ body {
 }
 
 .top-nav {
-    list-style: none;
+    
 }
 
 .nav-studio {
@@ -132,7 +164,7 @@ body {
     color: var(--accent-color);
 }
 
-/* контакти */
+/* --- контакти --- */
 
 .top-auth {
 
@@ -172,10 +204,10 @@ body {
     color: var(--accent-color);
 }
 
-/* герой */
+/* --- герой --- */
 
 .hero {
-
+    text-align: center;
 }
 
 .hero-title {
@@ -187,9 +219,12 @@ body {
     color: var(--hero-text-color);
 
     text-transform: uppercase;
+    margin-bottom: 30px;
+
 }
 
 .button {
+
     font-family: "Roboto";
     font-weight: 700;
     font-size: 16px;
@@ -197,6 +232,14 @@ body {
 
     color: var(--hero-text-color);
     background: var(--accent-background-color);
+
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+    text-align: center;
+    border: 1px solid transparent;
+
 
     cursor: pointer;
 
@@ -207,10 +250,10 @@ body {
     background: var(--accent-background-color);
 }
 
-/* секції */
+/* --- секції --- */
 
 .section {
-
+    
 }
 
 .section-title {
@@ -220,12 +263,17 @@ body {
     letter-spacing: 0.03em;
     
     color: var(--primary-text-color);
-
-    /* text-align: center; */
+    margin-bottom: 50px;
 }
 
+.centered {
+    text-align: center;
+}
+.item {
+    margin-bottom: 10px;
+}
 
-/* наші переваги */
+/* --- наші переваги --- */
 
 .features {
 
@@ -243,33 +291,55 @@ body {
     text-transform: uppercase;
     
     color: var(--primary-text-color);
+
+    margin-bottom: 10px;
 }
 
-/* чим займаємось */
+/* --- чим займаємось --- */
 
 .work-list {
 
     list-style: none;
 }
-/* наша команда */
+/* --- наша команда --- */
+
+.our-team {
+    background: var(--background-button-color);
+}
 
 .team {
 
     list-style: none;
 }
 
+.team-item {
+    background: #FFFFFF;
+    padding-bottom: 30px;
+    width: 270px;
+    text-align: center;
+}
+
+
+
 .team-title {
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
 
-    letter-spacing: 0.03em;
+    margin-top: 30px;
+    
 }
 
-/* footer */
+/* --- footer --- */
+
+
+.bottom {
+    background: var(--background-footer);
+}
 
 .logo-bottom {
 
@@ -321,9 +391,7 @@ body {
     color: var(--accent-color);
 }
 
-
-/* ?------------------------------------------ */
-/* поротфоліо */
+/* !--- поротфоліо --- інша сторінка --- */
 
 .btn-links {
 
@@ -339,21 +407,27 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    
     letter-spacing: 0.03em;
     
     color: var(--primary-text-color);
-
     background: var(--background-button-color);
+
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 73px;
+    text-align: center;
+    border: 1px solid transparent;
 }
 
 .btn-link:hover, .btn-link:focus
 {
     color: var(--hero-text-color);
     background: var(--accent-background-color);
+    padding: 6px 25px;
 }
 
-/* галерея */
+/* --- галерея --- */
 
 .gallery {
 
