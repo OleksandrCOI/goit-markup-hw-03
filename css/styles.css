@@ -286,7 +286,6 @@ body {
     text-align: center;
     border: 1px solid transparent;
 
-
     cursor: pointer;
 
 }
@@ -305,7 +304,7 @@ body {
 }
 
 .section-features {
-    padding-top: 47px;
+    padding-top: 94px;
     padding-bottom: 0px;
 }
 
@@ -331,6 +330,10 @@ body {
     margin-left: 30px;
     }
 
+.features-list > .item {
+        width: 270px; 
+        }    
+
 .features-title {
 
     font-weight: 700;
@@ -345,9 +348,9 @@ body {
 }
 
 .item > .text {
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em; 
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 
@@ -371,8 +374,16 @@ body {
 
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* 
+    flex-wrap: wrap; */
+    /* gap: 30px; */
 }
+
+.team > .team-item + .team-item {
+    margin-left: 30px;
+}
+
 
 .team-item {
     background: #FFFFFF;
